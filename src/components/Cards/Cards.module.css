@@ -1,0 +1,22 @@
+.cards {
+  display: flex;
+  gap: 31px;
+  padding-top: 71px;
+  padding-left: 62px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(214, 217, 220);
+  background-color: #181818;
+  padding-bottom: 200px;
+}
+
+.cards__error{
+  border-radius: 57px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  border: 2px transparent;
+  box-sizing: border-box;
+  border-radius: 57px;
+}
