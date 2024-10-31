@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 23px 62px;
+  border-bottom: 1px solid rgb(214, 217, 220);
+}
+
+.header__span {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+}
+
+.header__link {
+  color: rgb(2, 2, 2);
+  text-align: right;
+}
+.header__link:hover {
+  color: rgb(41, 105, 202);
+  text-decoration-line: underline;
+}
+.header__link_active {
+  color: rgb(0, 0, 0);
+  text-decoration-line: underline;
+}
+
+.header__contacts {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.header__line {
+  color: black;
+}
