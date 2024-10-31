@@ -7,7 +7,7 @@ const nextConfig = {
       {
         protocol: "http",
         hostname: "localhost",
-        port: "1337", // Укажите порт, если Strapi работает на 1337
+        port: "1337",
         pathname: "/uploads/**",
       },
     ],
