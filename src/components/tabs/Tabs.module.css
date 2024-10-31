@@ -8,10 +8,11 @@
   border-bottom: 1px solid rgb(214, 217, 220);
 }
 
+/* Button styles */
 .tabs__btn {
   width: 273px;
   height: 73px;
-  padding: 27px 50px 27px 50px;
+  padding: 27px 50px;
   border-radius: 57px;
   background: #181818;
   color: rgb(255, 255, 255);
@@ -35,5 +36,22 @@
   border-radius: 57px;
 }
 
-.tabs__span {
+/* Horizontal scroll styling for 375px screens */
+@media (max-width: 375px) {
+  .tabs {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-left: 20px; /* Adjust padding for smaller screens */
+    padding-right: 20px; /* Add right padding to avoid clipping */
+    white-space: nowrap; /* Prevent buttons from wrapping to new lines */
+  }
+
+  .tabs__btn {
+    flex: 0 0 auto; /* Ensure buttons don't shrink */
+    width: auto; /* Let buttons adjust their width to content */
+    min-width: 200px; /* Set a minimum width to ensure visibility */
+  }
+
+  .tabs__span {
+    display: inline-block; /* Keep separators inline for scrolling */
+  }
 }
