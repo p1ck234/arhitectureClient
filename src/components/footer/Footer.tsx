@@ -33,7 +33,7 @@ const Footer = () => {
         <a href="#" className={styles.footer__link}>
           +7 (911) 818-34-10
         </a>
-      </div>{" "}
+      </div>
     </footer>
   );
 };
