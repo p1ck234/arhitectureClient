@@ -1,0 +1,39 @@
+.tabs {
+  display: flex;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  padding-left: 62px;
+  gap: 19px;
+  align-items: center;
+  border-bottom: 1px solid rgb(214, 217, 220);
+}
+
+.tabs__btn {
+  width: 273px;
+  height: 73px;
+  padding: 27px 50px 27px 50px;
+  border-radius: 57px;
+  background: #181818;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: right;
+  border: 2px transparent;
+  box-sizing: border-box;
+  border-radius: 57px;
+}
+.tabs__btn:hover {
+  box-sizing: border-box;
+  border: 2px solid rgb(41, 105, 202);
+  border-radius: 57px;
+}
+
+.tabs__btn_active {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 57px;
+}
+
+.tabs__span {
+}
