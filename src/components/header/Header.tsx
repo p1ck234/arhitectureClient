@@ -1,37 +1,94 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./Header.module.css";
 import clsx from "clsx";
 
 const Header = () => {
+  const [activeLink, setActiveLink] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleLinkClick = (linkName) => {
+    setActiveLink(linkName);
+    setIsMenuOpen(false); // Close menu after clicking a link
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-      <header className={styles.header}>
+    <header className={styles.header}>
+      <a href="/" onClick={() => handleLinkClick("architecture")}>
         <span className={styles.header__span}>architecture</span>
-        <div className={styles.header__contacts}>
-          <a
-            href="#"
-            className={clsx(styles.header__link, styles.header__link_active)}
-          >
-            Project
-          </a>
-          <a href="#" className={styles.header__link}>
-            News
-          </a>
-          <a href="#" className={styles.header__link}>
-            Blog
-          </a>
-          <a href="#" className={styles.header__link}>
-            Contacts
-          </a>
-          <span className={styles.header__line}>|</span>
-          <a href="#" className={styles.header__link}>
-            Call me
-          </a>
-          <span className={styles.header__line}>|</span>
-          <a href="#" className={styles.header__link}>
-            +7 (911) 818-34-10
-          </a>
-        </div>
-      </header>
+      </a>
+
+      <button className={styles.burger} onClick={toggleMenu}>
+        ☰
+      </button>
+
+      <div
+        className={clsx(styles.header__contacts, {
+          [styles.header__contacts_open]: isMenuOpen,
+        })}
+      >
+        <a
+          href="#"
+          onClick={() => handleLinkClick("Project")}
+          className={clsx(styles.header__link, {
+            [styles.header__link_active]: activeLink === "Project",
+          })}
+        >
+          Project
+        </a>
+        <a
+          href="#"
+          onClick={() => handleLinkClick("News")}
+          className={clsx(styles.header__link, {
+            [styles.header__link_active]: activeLink === "News",
+          })}
+        >
+          News
+        </a>
+        <a
+          href="#"
+          onClick={() => handleLinkClick("Blog")}
+          className={clsx(styles.header__link, {
+            [styles.header__link_active]: activeLink === "Blog",
+          })}
+        >
+          Blog
+        </a>
+        <a
+          href="#"
+          onClick={() => handleLinkClick("Contacts")}
+          className={clsx(styles.header__link, {
+            [styles.header__link_active]: activeLink === "Contacts",
+          })}
+        >
+          Contacts
+        </a>
+        <span className={styles.header__line}>|</span>
+        <a
+          href="#"
+          onClick={() => handleLinkClick("Call me")}
+          className={clsx(styles.header__link, {
+            [styles.header__link_active]: activeLink === "Call me",
+          })}
+        >
+          Call me
+        </a>
+        <span className={styles.header__line}>|</span>
+        <a
+          href="#"
+          onClick={() => handleLinkClick("+7 (911) 818-34-10")}
+          className={clsx(styles.header__link, {
+            [styles.header__link_active]: activeLink === "+7 (911) 818-34-10",
+          })}
+        >
+          +7 (911) 818-34-10
+        </a>
+      </div>
+    </header>
   );
 };
 

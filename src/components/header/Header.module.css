@@ -36,3 +36,45 @@
 .header__line {
   color: black;
 }
+
+/* Burger Menu Button */
+.burger {
+  display: none; /* Hidden by default */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+/* Mobile Styles for 375px Width */
+@media (max-width: 375px) {
+  .burger {
+    display: block; /* Show burger button on mobile */
+  }
+
+  .header__contacts {
+    display: none; /* Hide contacts by default */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+    z-index: 10;
+    border-top: 1px solid rgb(214, 217, 220);
+  }
+
+  .header__contacts_open {
+    display: flex; /* Show menu when burger is clicked */
+  }
+
+  .header__link,
+  .header__line {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+}
