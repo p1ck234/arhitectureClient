@@ -21,9 +21,20 @@
   border-radius: 57px;
   height: 50dvh;
 }
+@media (max-width: 1024px) {
+  .cards {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    padding-right: 62px;
+  }
+}
 
 @media (max-width: 375px) {
-  .cards{
+  .cards {
     padding-left: 5px;
     padding-right: 5px;
   }
