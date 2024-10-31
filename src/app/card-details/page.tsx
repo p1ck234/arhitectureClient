@@ -1,8 +1,8 @@
-// pages/card-details.tsx
 "use client";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import styles from "./page.module.css";
 
 const CardDetails: React.FC = () => {
   const searchParams = useSearchParams();
@@ -55,15 +55,17 @@ const CardDetails: React.FC = () => {
       : "/default-image.png";
 
   return (
-    <div>
-      <h1>{Title}</h1>
+    <div className={styles.page__box}>
       {imageUrl && (
         <Image src={imageUrl} alt={Title} width={579} height={360} />
       )}
       <div>
+        <h1 className={styles.title}>{Title}</h1>
         {Content &&
           Content.map((contentItem: any, index: number) => (
-            <p key={index}>{contentItem.children[0].text}</p>
+            <p className={styles.page__p} key={index}>
+              {contentItem.children[0].text}
+            </p>
           ))}
       </div>
     </div>
