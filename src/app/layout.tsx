@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import clsx from "clsx";
+import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["cyrillic"] });
 
@@ -16,7 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className={styles.container}>
+          <Header />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

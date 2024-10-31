@@ -35,12 +35,10 @@ export default function Home() {
   );
 
   return (
-    <div className={styles.container}>
-      <Header />
+    <div>
       <Main />
       <Tabs onSelectTag={setSelectedTag} />
       <Cards cards={filteredCards} />
-      <Footer />
     </div>
   );
 }
