@@ -7,7 +7,7 @@ const Tabs = ({ onSelectTag }) => {
 
   const handleTagClick = (tag) => {
     setActiveTag(tag);
-    onSelectTag(tag); // Передаем выбранный тег в родительский компонент
+    onSelectTag(tag);
   };
 
   return (
