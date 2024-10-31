@@ -19,7 +19,50 @@
   flex-direction: row;
   padding: 36px;
   gap: 30px;
-  height: 85vh;
+  height: 75vh;
+}
+
+/* Recommendations Section */
+.recommendations {
+  background-color: #181818;
+  border-top: 1px solid rgb(214, 217, 220);
+}
+
+.recommendations__title {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-left: 36px;
+  padding-top: 36px;
+}
+
+@media (max-width: 1024px) {
+  .page__p {
+    font-size: 18px; /* Adjust font size for description */
+    line-height: 28px; /* Adjust line height */
+  }
+  .title {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__p {
+    font-size: 12px; /* Adjust font size for description */
+    line-height: 28px; /* Adjust line height */
+  }
+  .title {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+  }
 }
 
 /* Responsive adjustments for 375px screens */
@@ -29,6 +72,11 @@
     align-items: center; /* Center items */
     padding: 20px; /* Reduce padding for mobile */
     gap: 20px; /* Reduce gap for mobile layout */
+    height: auto; /* Remove fixed height for flexibility */
+  }
+  .page__img {
+    width: 340px;
+    height: auto;
   }
 
   .title {
@@ -39,6 +87,30 @@
 
   .page__p {
     font-size: 18px; /* Adjust font size for description */
+    line-height: 28px; /* Adjust line height */
+    text-align: center; /* Center-align text */
+  }
+
+  .recommendations {
+    padding-left: 10px; /* Reduce padding for mobile */
+    padding-right: 10px;
+  }
+
+  .recommendations__title {
+    font-size: 20px; /* Adjust font size for mobile */
+    text-align: center; /* Center-align title */
+    margin-bottom: 15px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .page__img {
+    width: 300px;
+    height: auto;
+  }
+  .page__p {
+    font-size: 12px; /* Adjust font size for description */
     line-height: 28px; /* Adjust line height */
     text-align: center; /* Center-align text */
   }
