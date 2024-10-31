@@ -4,12 +4,12 @@ import styles from "./Header.module.css";
 import clsx from "clsx";
 
 const Header = () => {
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState<string | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleLinkClick = (linkName) => {
+  const handleLinkClick = (linkName: string) => {
     setActiveLink(linkName);
-    setIsMenuOpen(false); // Close menu after clicking a link
+    setIsMenuOpen(false);
   };
 
   const toggleMenu = () => {
