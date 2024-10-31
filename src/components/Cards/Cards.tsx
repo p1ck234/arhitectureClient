@@ -1,14 +1,28 @@
+// cards.tsx
 import React from "react";
 import Card from "../card/Card";
 import styles from "./Cards.module.css";
 
-const Cards = ({ cards }) => {
+interface CardData {
+  id: number;
+  documentId: string;
+  Image: any[];
+  Title: string;
+  Content: any[];
+}
+
+interface CardsProps {
+  cards: CardData[];
+}
+
+const Cards: React.FC<CardsProps> = ({ cards }) => {
   return (
     <div className={styles.cards}>
       {cards.length > 0 ? (
         cards.map((item) => (
           <Card
             key={item.id}
+            documentId={item.documentId} // Передаем documentId
             imageUrl={
               item.Image && item.Image.length > 0
                 ? `http://localhost:1337${

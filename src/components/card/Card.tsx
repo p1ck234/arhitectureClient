@@ -1,10 +1,30 @@
+// card.tsx
 import React from "react";
 import Image from "next/image";
-import styles from "./Card.module.css"
+import { useRouter } from "next/navigation"; // Импортируем useRouter
+import styles from "./Card.module.css";
 
-const Card = ({ imageUrl, title, description }) => {
+interface CardProps {
+  imageUrl: string;
+  title: string;
+  description: string;
+  documentId: string;
+}
+
+const Card: React.FC<CardProps> = ({
+  imageUrl,
+  title,
+  description,
+  documentId,
+}) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/card-details?documentId=${documentId}`);
+  };
+
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={handleClick}>
       {imageUrl ? (
         <Image src={imageUrl} alt={title} width={579} height={360} />
       ) : (
