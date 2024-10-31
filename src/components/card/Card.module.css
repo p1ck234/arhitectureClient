@@ -3,7 +3,9 @@
   flex-direction: column;
   gap: 30px;
   width: 579px;
+  cursor: pointer;
 }
+
 .card__title {
   color: rgb(255, 255, 255);
   font-size: 32px;
@@ -19,4 +21,27 @@
   line-height: 160%;
   letter-spacing: 0%;
   text-align: left;
+}
+
+/* Responsive adjustments for 375px screens */
+@media (max-width: 375px) {
+  .card {
+    width: 100%; /* Full width for smaller screens */
+    gap: 20px; /* Reduce gap between elements */
+    padding: 15px; /* Add padding for spacing on mobile */
+  }
+
+  .card__title {
+    font-size: 24px; /* Smaller font size for title */
+    line-height: 140%; /* Adjust line height for readability */
+  }
+
+  .card__p {
+    font-size: 14px; /* Smaller font size for description */
+    line-height: 150%;
+  }
+  .card__img {
+    width: 345px;
+    height: auto;
+  }
 }

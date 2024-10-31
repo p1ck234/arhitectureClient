@@ -9,7 +9,7 @@
   padding-bottom: 200px;
 }
 
-.cards__error{
+.cards__error {
   border-radius: 57px;
   color: rgb(255, 255, 255);
   font-size: 18px;
@@ -20,4 +20,11 @@
   box-sizing: border-box;
   border-radius: 57px;
   height: 50dvh;
+}
+
+@media (max-width: 375px) {
+  .cards{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

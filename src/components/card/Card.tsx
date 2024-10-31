@@ -1,7 +1,6 @@
-// card.tsx
 import React from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation"; // Импортируем useRouter
+import { useRouter } from "next/navigation";
 import styles from "./Card.module.css";
 
 interface CardProps {
@@ -26,7 +25,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <div className={styles.card} onClick={handleClick}>
       {imageUrl ? (
-        <Image src={imageUrl} alt={title} width={579} height={360} />
+        <Image className={styles.card__img} src={imageUrl} alt={title} width={579} height={360} />
       ) : (
         <p>Изображение недоступно</p>
       )}
