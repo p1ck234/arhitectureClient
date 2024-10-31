@@ -37,9 +37,8 @@
   color: black;
 }
 
-/* Burger Menu Button */
 .burger {
-  display: none; /* Hidden by default */
+  display: none; 
   font-size: 24px;
   background: none;
   border: none;
@@ -49,11 +48,11 @@
 
 @media (max-width: 1024px) {
   .burger {
-    display: block; /* Show burger button on mobile */
+    display: block; 
   }
 
   .header__contacts {
-    display: none; /* Hide contacts by default */
+    display: none;
     position: absolute;
     top: 70px;
     left: 0;
@@ -68,7 +67,7 @@
   }
 
   .header__contacts_open {
-    display: flex; /* Show menu when burger is clicked */
+    display: flex; 
   }
 
   .header__link,
@@ -79,14 +78,13 @@
 }
 
 
-/* Mobile Styles for 375px Width */
 @media (max-width: 375px) {
   .burger {
-    display: block; /* Show burger button on mobile */
+    display: block;
   }
 
   .header__contacts {
-    display: none; /* Hide contacts by default */
+    display: none; 
     position: absolute;
     top: 70px;
     left: 0;
@@ -101,7 +99,7 @@
   }
 
   .header__contacts_open {
-    display: flex; /* Show menu when burger is clicked */
+    display: flex;
   }
 
   .header__link,

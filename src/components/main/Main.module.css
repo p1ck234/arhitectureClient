@@ -88,7 +88,7 @@
   .main {
     padding-top: 20px;
     margin-bottom: 50px;
-    height: auto; /* Allow content height to adapt */
+    height: auto;
   }
   .img {
     width: 800px;
@@ -97,16 +97,16 @@
   }
 
   .main__desc {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
   }
 
   .main__img {
     position: absolute;
     top: 50px;
-    width: 100%; /* Make image responsive */
+    width: 100%;
     height: auto;
     max-width: 440px;
-    margin-bottom: 20px; /* Add spacing for better readability */
+    margin-bottom: 20px;
   }
 
   .main__right {
@@ -117,7 +117,7 @@
   }
 
   .right__desc {
-    font-size: 14px; /* Adjust font size for readability */
+    font-size: 14px;
     line-height: 1.5;
     text-align: center;
     color: white;
@@ -125,7 +125,7 @@
 
   .right__button {
     width: 100%;
-    padding: 15px 20px; /* Make button full-width */
+    padding: 15px 20px;
     font-size: 14px;
     align-self: left;
   }
@@ -139,7 +139,7 @@
   .main {
     padding-top: 20px;
     margin-bottom: 50px;
-    height: auto; /* Allow content height to adapt */
+    height: auto;
   }
 
   .main__title {
@@ -153,16 +153,16 @@
   }
 
   .main__desc {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
   }
 
   .main__img {
     position: absolute;
     top: 10px;
-    width: 100%; /* Make image responsive */
+    width: 100%;
     height: auto;
     max-width: 500px;
-    margin-bottom: 20px; /* Add spacing for better readability */
+    margin-bottom: 20px;
   }
 
   .main__right {
@@ -173,7 +173,7 @@
   }
 
   .right__desc {
-    font-size: 14px; /* Adjust font size for readability */
+    font-size: 14px;
     line-height: 1.5;
     text-align: center;
     color: white;
@@ -181,7 +181,7 @@
 
   .right__button {
     width: 100%;
-    padding: 15px 20px; /* Make button full-width */
+    padding: 15px 20px;
     font-size: 14px;
     align-self: left;
   }
@@ -191,12 +191,11 @@
   }
 }
 
-/* Mobile Styles for 375px Width */
 @media (max-width: 375px) {
   .main {
     padding-top: 20px;
     margin-bottom: 50px;
-    height: auto; /* Allow content height to adapt */
+    height: auto;
   }
 
   .main__title {
@@ -209,16 +208,16 @@
   }
 
   .main__desc {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
   }
 
   .main__img {
     position: absolute;
     top: 123px;
-    width: 100%; /* Make image responsive */
+    width: 100%;
     height: auto;
     max-width: 340px;
-    margin-bottom: 20px; /* Add spacing for better readability */
+    margin-bottom: 20px;
   }
 
   .main__right {
@@ -229,7 +228,7 @@
   }
 
   .right__desc {
-    font-size: 14px; /* Adjust font size for readability */
+    font-size: 14px;
     line-height: 1.5;
     text-align: center;
     color: white;
@@ -237,7 +236,7 @@
 
   .right__button {
     width: 100%;
-    padding: 15px 20px; /* Make button full-width */
+    padding: 15px 20px;
     font-size: 14px;
     align-self: left;
   }
@@ -251,7 +250,7 @@
   .main {
     padding-top: 20px;
     margin-bottom: 50px;
-    height: auto; /* Allow content height to adapt */
+    height: auto;
   }
 
   .main__title {
@@ -264,16 +263,16 @@
   }
 
   .main__desc {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
   }
 
   .main__img {
     position: absolute;
     top: 135px;
-    width: 100%; /* Make image responsive */
+    width: 100%;
     height: auto;
     max-width: 340px;
-    margin-bottom: 20px; /* Add spacing for better readability */
+    margin-bottom: 20px;
   }
 
   .main__right {
@@ -284,7 +283,7 @@
   }
 
   .right__desc {
-    font-size: 14px; /* Adjust font size for readability */
+    font-size: 14px;
     line-height: 1.5;
     text-align: center;
     color: white;
@@ -292,7 +291,7 @@
 
   .right__button {
     width: 100%;
-    padding: 15px 20px; /* Make button full-width */
+    padding: 15px 20px;
     font-size: 14px;
     align-self: left;
   }

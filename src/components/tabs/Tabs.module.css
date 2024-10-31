@@ -8,7 +8,6 @@
   border-bottom: 1px solid rgb(214, 217, 220);
 }
 
-/* Button styles */
 .tabs__btn {
   width: 273px;
   height: 73px;
@@ -38,39 +37,38 @@
 
 @media (max-width: 768px) {
   .tabs {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding-left: 20px; /* Adjust padding for smaller screens */
-    padding-right: 20px; /* Add right padding to avoid clipping */
-    white-space: nowrap; /* Prevent buttons from wrapping to new lines */
+    overflow-x: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
   }
 
   .tabs__btn {
-    flex: 0 0 auto; /* Ensure buttons don't shrink */
-    width: auto; /* Let buttons adjust their width to content */
-    min-width: 200px; /* Set a minimum width to ensure visibility */
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 200px;
   }
 
   .tabs__span {
-    display: inline-block; /* Keep separators inline for scrolling */
+    display: inline-block;
   }
 }
 
-/* Horizontal scroll styling for 375px screens */
 @media (max-width: 375px) {
   .tabs {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding-left: 20px; /* Adjust padding for smaller screens */
-    padding-right: 20px; /* Add right padding to avoid clipping */
-    white-space: nowrap; /* Prevent buttons from wrapping to new lines */
+    overflow-x: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: nowrap;
   }
 
   .tabs__btn {
-    flex: 0 0 auto; /* Ensure buttons don't shrink */
-    width: auto; /* Let buttons adjust their width to content */
-    min-width: 200px; /* Set a minimum width to ensure visibility */
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 200px;
   }
 
   .tabs__span {
-    display: inline-block; /* Keep separators inline for scrolling */
+    display: inline-block;
   }
 }

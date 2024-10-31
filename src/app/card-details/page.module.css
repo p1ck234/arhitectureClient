@@ -22,7 +22,6 @@
   height: 75vh;
 }
 
-/* Recommendations Section */
 .recommendations {
   background-color: #181818;
   border-top: 1px solid rgb(214, 217, 220);
@@ -39,8 +38,8 @@
 
 @media (max-width: 1024px) {
   .page__p {
-    font-size: 18px; /* Adjust font size for description */
-    line-height: 28px; /* Adjust line height */
+    font-size: 18px;
+    line-height: 28px;
   }
   .title {
     color: rgb(255, 255, 255);
@@ -53,8 +52,8 @@
 
 @media (max-width: 768px) {
   .page__p {
-    font-size: 12px; /* Adjust font size for description */
-    line-height: 28px; /* Adjust line height */
+    font-size: 12px;
+    line-height: 28px;
   }
   .title {
     color: rgb(255, 255, 255);
@@ -65,14 +64,13 @@
   }
 }
 
-/* Responsive adjustments for 375px screens */
 @media (max-width: 375px) {
   .page__box {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    padding: 20px; /* Reduce padding for mobile */
-    gap: 20px; /* Reduce gap for mobile layout */
-    height: auto; /* Remove fixed height for flexibility */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    height: auto;
   }
   .page__img {
     width: 340px;
@@ -80,25 +78,25 @@
   }
 
   .title {
-    font-size: 24px; /* Adjust font size for title */
-    line-height: 32px; /* Adjust line height */
-    text-align: center; /* Center-align title for mobile */
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
   }
 
   .page__p {
-    font-size: 18px; /* Adjust font size for description */
-    line-height: 28px; /* Adjust line height */
-    text-align: center; /* Center-align text */
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
   }
 
   .recommendations {
-    padding-left: 10px; /* Reduce padding for mobile */
+    padding-left: 10px;
     padding-right: 10px;
   }
 
   .recommendations__title {
-    font-size: 20px; /* Adjust font size for mobile */
-    text-align: center; /* Center-align title */
+    font-size: 20px;
+    text-align: center;
     margin-bottom: 15px;
     padding-left: 0;
   }
@@ -110,8 +108,8 @@
     height: auto;
   }
   .page__p {
-    font-size: 12px; /* Adjust font size for description */
-    line-height: 28px; /* Adjust line height */
-    text-align: center; /* Center-align text */
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
   }
 }
