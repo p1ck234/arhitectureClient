@@ -1,3 +1,4 @@
+/* Existing styles */
 .main {
   background: white;
   padding-top: 111px;
@@ -27,8 +28,8 @@
 .main__desc {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Выравнивает элементы по вертикали по центру */
-  justify-content: space-between; /* Раздвигает элементы: изображение слева, текст справа */
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main__right {
@@ -36,7 +37,7 @@
   padding-right: 215px;
   display: flex;
   flex-direction: column;
-  max-width: 800px; /* Устанавливает максимальную ширину текстового блока */
+  max-width: 800px;
 }
 
 .right__desc {
@@ -63,15 +64,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10;
-  padding: 20px 50px 20px 50px;
+  gap: 10px;
+  padding: 20px 50px;
   margin-top: 27px;
   width: 184px;
 }
 
 .right__button:hover {
   background: rgb(41, 105, 202);
-  color: #2969ca;
   color: rgb(255, 255, 255);
 }
 
@@ -79,6 +79,63 @@
   background: rgb(21, 69, 141);
   color: rgb(255, 255, 255);
 }
+
 .main__line {
   border-bottom: 1px solid rgb(214, 217, 220);
+}
+
+/* Mobile Styles for 375px Width */
+@media (max-width: 375px) {
+  .main {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    height: auto; /* Allow content height to adapt */
+  }
+
+  .main__title {
+    margin-left: -35px;
+  }
+  .img {
+    width: 340px;
+    position: relative;
+    margin-bottom: 160px;
+  }
+
+  .main__desc {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .main__img {
+    position: absolute;
+    top: 123px;
+    width: 100%; /* Make image responsive */
+    height: auto;
+    max-width: 340px;
+    margin-bottom: 20px; /* Add spacing for better readability */
+  }
+
+  .main__right {
+    padding-top: 20px;
+    padding-right: 0;
+    max-width: 100%;
+    background-color: #181818;
+  }
+
+  .right__desc {
+    font-size: 14px; /* Adjust font size for readability */
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+  }
+
+  .right__button {
+    width: 100%;
+    padding: 15px 20px; /* Make button full-width */
+    font-size: 14px;
+    align-self: left;
+  }
+
+  .main__line {
+    margin-top: 20px;
+  }
 }

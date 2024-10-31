@@ -7,7 +7,7 @@ const Main = () => {
     <div>
       <main className={styles.main}>
         <div className={styles.main__title}>
-          <Image src="svg/Architecture.svg" width={1800} height={170} alt="" />
+          <Image className={styles.img} src="svg/Architecture.svg" width={1800} height={170} alt="" />
         </div>
         <div className={styles.main__desc}>
           <div>
